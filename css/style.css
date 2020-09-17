@@ -1,0 +1,35 @@
+/* Variables */
+
+:root {
+ /* Basic colors */
+
+ --basic-white: #FFFFFF;
+ --ghost-white: #F2F2F2;
+ --smoke-white: #EEEEEE;
+
+ --basic-black: #000000;
+ --half-black: #333333;
+
+ --basic-blue: #81B3D2;
+
+ --basic-gray: #EEEEEE;
+ --dark-gray: #A9A9A9;
+ --lead-gray: #666666;
+
+ --basic-brown: #766357;
+
+ /* Styleguide colors */
+
+ --dim-gray: #6A6A6A;
+ --light-gray: #CACACA;
+ --ghost-gray: #EBEBEB;
+
+ --medi-blue: #669EC0;
+ --dark-blue: #5496BD;
+ 
+ --medi-brown: #604E43;
+ --dark-brown: #503E33;
+}
+
+/* Global */
+
