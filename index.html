@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html class="page" lang="ru">
+<html lang="ru">
 
 <head>
 	<meta charset="utf-8">
 	<title>Седона — небольшой городок в Аризоне</title>
 	<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/normalize.css">
-	<link rel="stylesheet" href="css/style.css">
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-body">
-	<header class="header">
-		<a href="index.html" class="main-logo">
-			<img src="img/logo_of_sedona.svg" width="138" height="70" alt="logo of sedona">
-		</a>
+<body>
+	<header class="main-header">
+		<div class="header-inner">
+			<a class="main-logo" href="index.html">
+				<img src="img/logo_of_sedona.svg" width="138" height="70" alt="logo of sedona">
+			</a>
+		</div>
 		<nav class="main-nav">
 			<ul class="main-nav-menu">
 				<li class="main-menu-item">
@@ -44,11 +46,16 @@
 		<section class="features">
 			<h2 class="visually-hidden">Особенности и достопримечательности Седоны</h2>
 			<ul class="features-list">
-				<li class="features-item">
-					<h3 class="features-title">Настоящий городок</h3>
-					<span class="features-decoration">&ndash;№1&ndash;</span>
-					<p class="features-description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-					<img class="photo-sedona" src="img/photo_of_sedona.jpg" width="800" height="256" alt="photo of sedona">
+				<li class="features-item-sepcial">
+					<div class="item-special-description">
+						<h3 class="features-title">Настоящий городок</h3>
+						<span class="features-decoration">&ndash;№1&ndash;</span>
+						<p class="features-description">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+					</div>
+					<div class="item-special-picture">
+						<img class="photo-sedona" src="img/photo_of_sedona.jpg" width="800" height="256"
+							alt="photo of sedona">
+					</div>
 					<ul class="facts">
 						<li class="facts-item">
 							<h4 class="facts-title">Жилье</h4>
@@ -64,11 +71,15 @@
 						</li>
 					</ul>
 				</li>
-				<li class="features-item">
-					<h3 class="features-title">Там есть Мост дьявола</h3>
-					<span class="features-decoration">&ndash;№2&ndash;</span>
-					<p class="features-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-					<img src="img/attractions_of_sedona.jpg" width="800" height="256" alt="Мост дьявола">
+				<li class="features-special-item">
+					<div class="special-item-description">
+						<h3 class="features-title">Там есть Мост дьявола</h3>
+						<span class="features-decoration">&ndash;№2&ndash;</span>
+						<p class="features-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+					</div>
+					<div class="special-item-picture">
+						<img src="img/attractions_of_sedona.jpg" width="800" height="256" alt="Мост дьявола">
+					</div>
 				</li>
 				<li class="features-item">
 					<h3 class="features-title">Небольшая площадь</h3>
@@ -93,7 +104,9 @@
 			<p class="search-invitation">Заинтересовались?</p>
 			<p class="search-offer">Укажите предполагаемые даты поездки,<br>
 				и мы покажем вам лучшие предложения гостиниц в седоне</p>
-			<a class="search-link" href="#">Поиск гостиницы в Седоне</a>
+			<div class="form-button">
+				<a class="search-link" href="#">Поиск гостиницы в Седоне</a>
+			</div>
 			<form class="form" action="#" method="GET">
 				<div class="form-field">
 					<div class="form-container">
@@ -139,7 +152,7 @@
 		</section>
 	</main>
 
-	<footer class="main-footer">
+	<footer class="page-footer">
 		<div class="contacts">
 			<p class="contacts-hashtag">#visitsedona</p>
 			<a class="phone-number" href="tel:+7(495)666-01-66">ТЕЛ: +7(495) 666-01-66</a>

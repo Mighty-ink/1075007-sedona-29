@@ -1,35 +1,250 @@
+/*Fonts*/
+
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('PT Sans'), local('PTSans-Regular'),
+		  url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff2') format('woff2'), 
+		  url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff') format('woff');
+	font-display: swap; 
+}
+ 
+ @font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local('PT Sans Bold'), local('PTSans-Bold'),
+		  url('../fonts/pt-sans-v12-latin_cyrillic-700.woff2') format('woff2'), 
+		  url('../fonts/pt-sans-v12-latin_cyrillic-700.woff') format('woff');
+	font-display: swap;	   
+ }
+
+
 /* Variables */
 
 :root {
  /* Basic colors */
 
- --basic-white: #FFFFFF;
- --ghost-white: #F2F2F2;
- --smoke-white: #EEEEEE;
+ --basic-white-FF: #FFFFFF;
+ --basic-white-F2: #F2F2F2;
+ --basic-white-EE: #EEEEEE;
+ --basic-white-09: rgba(255, 255, 255, 0.9);
+ 
+ --basic-black-00: #000000;
+ --basic-black-33: #333333;
+ --basic-black-01: #000101;
+ --basic-black-02: rgba(0, 1, 1, 0.2);
 
- --basic-black: #000000;
- --half-black: #333333;
+ --basic-grey-EE: #EEEEEE;
+ --basic-grey-A9: #A9A9A9;
+ --basic-grey-66: #666666;
 
- --basic-blue: #81B3D2;
+ --basic-brown-57: #766357;
 
- --basic-gray: #EEEEEE;
- --dark-gray: #A9A9A9;
- --lead-gray: #666666;
+ --basic-blue-D2: #81B3D2;
 
- --basic-brown: #766357;
 
  /* Styleguide colors */
 
- --dim-gray: #6A6A6A;
- --light-gray: #CACACA;
- --ghost-gray: #EBEBEB;
+ --style-grey-6A: #6A6A6A;
+ --style-grey-CA: #CACACA;
+ --style-grey-EB: #EBEBEB;
 
- --medi-blue: #669EC0;
- --dark-blue: #5496BD;
+ --style-blue-C0: #669EC0;
+ --style-blue-BD: #5496BD;
  
- --medi-brown: #604E43;
- --dark-brown: #503E33;
+ --style-brown-43: #604E43;
+ --style-brown-33: #503E33;
+ 
+ --style-white-03: rgb(255, 255, 255, 0.3);
 }
 
 /* Global */
+
+html {
+	background-color: var(--basic-white-F2);
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "PT Sans","Arial", sans-serif;
+   font-size: 14px;
+   line-height: 24px;
+   font-weight: 400;
+	text-transform: uppercase;
+	background-color: var(--basic-white-FF);
+	max-width: 1200px;
+	margin: auto;
+	padding: 0;
+	box-shadow: 0px 5px 15px 0px var(--basic-black-02);
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden {
+	display: none;
+}
+
+/* ====Header==== */
+
+/*Main navigation*/
+
+
+.header-inner {
+  text-align: center;
+}
+
+.main-nav {
+  line-height: 26px;
+  font-weight: bold;
+}
+
+.main-nav-menu, 
+.main-nav-menu a {
+  list-style: none;
+  color: var(--basic-black-00);
+}
+
+.main-menu-item {
+	text-align: center;
+}
+
+
+/* ====Main==== */
+
+
+.intro {
+	background-image: url("../img/background_photo_of_sedona_canyon.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: var(--basic-black-00);
+	text-align: center;
+}
+
+
+.intro-description {
+   font-size: 21px;
+   line-height: 26px;
+   font-weight: bold;
+	white-space: pre-wrap;
+}
+
+
+.features-list {
+	background-color: var(--basic-grey-EE);
+	line-height: 21px;
+	list-style: none;
+	padding: 0;
+}
+
+.features-item-sepcial,
+.features-special-item {
+	color: var(--basic-white-FF);
+	background-color: var(--basic-blue-D2);
+}
+
+.features-item {
+	text-align: center;
+}
+
+.facts {
+	background-color: var(--basic-white-FF);
+	list-style: none;
+	padding: 0;
+	line-height: 21px;
+}
+
+.facts-title {
+	color: var(--basic-black-00);
+	text-align: center;
+}
+
+.facts-description {
+	color: var(--basic-black-33);
+	text-align: center;
+}
+
+/*====Map section====*/
+
+.search-hotels {
+	text-align: center;
+}
+
+
+.search-invitation {
+	font-size: 30px;
+	line-height: 24px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.search-offer {
+	text-align: center;
+}
+
+
+.search-link {
+   text-decoration: none;
+   color: var(--basic-white-FF);
+	background-color: var(--basic-brown-57);
+	font-size: 21px;
+	line-height: 26px;
+	font-weight: 700;
+
+}
+
+.search-link:hover {
+   background-color: var(--style-brown-43);
+}
+
+.search-link:active {
+	background-color: var(--style-brown-33);
+	color: var(--style-white-03);
+}
+
+.interactive-map {
+	border-style: none;
+}
+
+
+/*====Footer====*/
+
+.page-footer {
+	background-color: var(--basic-white-09);
+}
+
+.contacts {
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 26px;
+	text-align: left;
+}
+
+
+.social-list {
+  list-style: none;
+}
+
+.developer-contact {
+	text-align: right;
+}
+
+.develop-by {
+	line-height: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
