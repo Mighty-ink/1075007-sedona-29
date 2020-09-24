@@ -213,6 +213,8 @@ a {
   color: var(--basic-white-03);
 }
 
+/* ====Form==== */
+
 .form {
   font-weight: 700;
   line-height: 26px;
@@ -263,8 +265,10 @@ a {
   color: var(--basic-white-03);
 }
 
-.develop-logo:hover {
-  color: var(--basic-blue-100);
+.form-input,
+.search-button,
+.form-button {
+  outline: none;
 }
 
 .interactive-map {
@@ -312,7 +316,6 @@ a {
   font-weight: 400;
   font-size: 14px;
 }
-
 
 /* =======Hotels page======= */
 
