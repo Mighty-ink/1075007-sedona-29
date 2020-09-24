@@ -20,16 +20,16 @@
     <nav class="nav">
       <ul class="nav-menu">
         <li class="menu-item">
-          <a href="index.html #information">Информация</a>
+          <a class="active" href="index.html #information">Информация</a>
         </li>
         <li class="menu-item">
-          <a href="#">Фото и видео</a>
+          <a class="active" href="#">Фото и видео</a>
         </li>
         <li class="menu-item">
-          <a href="index.html #local-map">Карта штата</a>
+          <a class="active" href="index.html #local-map">Карта штата</a>
         </li>
         <li class="menu-item">
-          <a href="hotels.html">Гостиницы</a>
+          <a class="active" href="hotels.html">Гостиницы</a>
         </li>
       </ul>
     </nav>
@@ -45,14 +45,17 @@
           <label>
             <input class="filter-input" type="checkbox" name="pool" checked>
             Бассейн
+            <span></span>
           </label>
           <label>
             <input class="filter-input" type="checkbox" name="parking">
             Парковка
+            <span></span>
           </label>
           <label>
             <input class="filter-input" type="checkbox" name="wi-fi">
             Wi-fi
+            <span></span>
           </label>
         </fieldset>
         <fieldset class="filter-group">
@@ -60,23 +63,28 @@
           <label>
             <input class="filter-input" type="checkbox" name="hotel" checked>
             Гостиница
+            <span></span>
           </label>
           <label>
             <input class="filter-input" type="checkbox" name="motel" checked>
             Мотель
+            <span></span>
           </label>
           <label>
             <input class="filter-input" type="checkbox" name="apartments" checked>
             Апартаменты
+            <span></span>
           </label>
         </fieldset>
         <fieldset class="filter-group">
           <legend class="filter-heading">Стоимость в сутки(р):</legend>
           <label>От
             <input class="filter-input" type="text" name="min-price" placeholder="0">
+            <span></span>
           </label>
           <label>До
             <input class="filter-input" type="text" name="max-price" placeholder="3000">
+            <span></span>
           </label>
           <div class="range-selector">
             <!--Заглушка под рейндж-->
@@ -173,9 +181,9 @@
     </section>
   </main>
 
-  <footer class="main-footer">
+  <footer class="page-footer">
     <div class="contacts">
-      <p class="contacts_hashtag">#visitsedona</p>
+      <p class="contacts-hashtag">#visitsedona</p>
       <a class="phone-number" href="tel:+7(495)666-01-66">ТЕЛ: +7(495) 666-01-66</a>
     </div>
     <ul class="social-list">
