@@ -109,11 +109,6 @@ a {
   opacity: 0.3;
 }
 
-/*???
-.main-menu-item a:not(href) {
-  color: var(--basic-brown-100);
-}
-*/
 
 /* ====Main==== */
 
@@ -336,7 +331,8 @@ a {
   color: var(--basic-black-100);
 }
 
-.menu-item {
+.menu-item,
+.menu-item-current {
   text-align: center;
 }
 
@@ -349,6 +345,9 @@ a {
   opacity: 0.3;
 }
 
+.menu-item-current a:not([href]) {
+  color: var(--basic-brown-100);
+}
 
 /* ====Main-hotels==== */
 
@@ -385,6 +384,11 @@ a {
 .filter-button:hover {
   background-color: var(--basic-white-100);
   color: var(--basic-black-100);
+}
+
+.filter-button,
+.filter-input {
+  outline: none;
 }
 
 /* ====Sort-section==== */
